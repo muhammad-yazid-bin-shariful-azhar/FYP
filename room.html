@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Hotel Booking System</h1>
+
+    <h2>Add Room</h2>
+    <form id="addForm">
+        Room Number: <input type="text" name="roomNumber" required><br>
+        Description: <input type="text" name="description" required><br>
+        Amenities: <input type="text" name="amenities" required><br>
+        <input type="submit" value="Add Room">
+    </form>
+
+    <h2>Room List</h2>
+    <ul id="roomList">
+        <!-- Room details will be dynamically loaded here -->
+    </ul>
+</body>
+</html>

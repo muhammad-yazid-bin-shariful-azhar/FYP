@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Booking System</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Hotel Booking System</h1>
+
+    <h2>Add Booking</h2>
+    <form id="addForm">
+        Room Number: <input type="text" name="roomNumber" required><br>
+        Guest Name: <input type="text" name="guestName" required><br>
+        Check-in Date: <input type="date" name="checkInDate" required><br>
+        Check-out Date: <input type="date" name="checkOutDate" required><br>
+        Payment Method: <select name="paymentMethod" required>
+            <option value="creditCard">Credit Card</option>
+            <option value="debitCard">Debit Card</option>
+            <option value="cash">Cash</option>
+        </select><br>
+        Payment Details: <input type="text" name="paymentDetails" required><br>
+        Account Details: <input type="text" name="accountDetails" required><br>
+        Staff Account Details: <input type="text" name="staffAccountDetails" required><br>
+        <input type="submit" value="Add Booking">
+    </form>
+
+    <h2>Booking List</h2>
+    <table id="bookingTable">
+        <tr>
+            <th>Room Number</th>
+            <th>Guest Name</th>
+            <th>Check-in Date</th>
+            <th>Check-out Date</th>
+            <th>Payment Method</th>
+            <th>Payment Details</th>
+            <th>Account Details</th>
+            <th>Staff Account Details</th>
+            <th>Actions</th>
+        </tr>
+        <!-- Booking details will be dynamically loaded here -->
+    </table>
+</body>
+</html>
