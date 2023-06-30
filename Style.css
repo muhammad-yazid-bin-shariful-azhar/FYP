@@ -1,0 +1,105 @@
+*
+::before,
+*,::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  line-height: 1.65;
+  padding: 2rem;
+  background-color: navy;
+  font-family: arial, helvetica, georgia, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  
+}
+
+li{
+  text-align:center;
+  font-size: 14px;
+  color: white;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-family: helvetica neue, Georgia, Comic sans, sans-serif;
+  margin-right:5px;
+}
+
+h1 {
+
+	font-weight:bold;
+	font-size:25px;
+	text-align:center;
+	color: white;
+  }
+  
+h2 {
+	font-size:38px;
+	text-align: center;
+	color: white;
+}
+label{ color:white;
+	display:grid;
+	font-family:Times New Roman, serif;
+	font-size:18px;
+}
+h3{
+	text-align:right;
+	font-size:19px;
+  display: inline;
+	margin-right:5px;
+	margin-bottom: 3px;
+}
+p{
+  text-align:center;
+  font-size: 14px;
+}
+
+/*add this class to the text*/
+.head {
+    background-color: white;
+  padding: 1rem;
+  }
+
+/*add this class to list*/
+.funni-css-grid {
+  --min: 20ch;
+  --gap: 1rem;
+  
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+.grad1 {
+	height: 200px;
+		background-color: red; 
+		background-image: linear-gradient(to right, white , aqua);
+		text-align:right;
+		margin-top: 5px;
+	}
+#cart{
+	display:block;
+}
+
+[class*="funni"]:not([data-component]) > *:not([data-unstyled]) {
+  display: grid;
+  padding: 1rem;
+  background-color: blue;
+  color: white;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-family: helvetica neue, sans-serif;
+  text-align: center;
+  border-radius: 0.15em;
+  border: 1px solid;
+  
+  [data-container-style] {
+  outline: 2px solid #29344B;
+}

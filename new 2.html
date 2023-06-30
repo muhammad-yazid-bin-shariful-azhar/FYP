@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="Style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Website</title>
+  <style>
+	#menu ul{
+		list-style: none;
+	}
+	#menu li{
+		display: inline;
+	}
+	
+  </style>
+  <script>
+    function addToCart(item) {
+      // Get the cart element
+      var cart = document.getElementById("cart");
+      
+      // Create a new list item for the cart
+      var listItem = document.createElement("li");
+      listItem.innerHTML = item;
+      
+      // Add the new item to the cart
+      cart.appendChild(listItem);
+    }
+	
+	function myFunction() {
+  		location.replace("")
+	}
+  </script>
+</head>
+<body>
+  <footer>
+    <nav class="grad1">
+        <h3><a href="#">Login</a> |</h3>
+        <h3><a href="#">Sign Up</a> |</h3>
+        <h3><a href="#">History</a> |</h3>
+		<h3><a href="#">Rooms</a> |</h3>
+    </nav>
+
+  </footer>
+
+  <section>
+	
+  <h2>Rooms</h2>
+  <div id="menu">
+  <ul id="items">
+    <li>Standard Room <button onclick="addToCart('standard')">Add to Cart</button></li>
+    <li>Couple Room <button onclick="addToCart('couple')">Add to Cart</button></li>
+    <li>King Room <button onclick="addToCart('king')">Add to Cart</button></li>
+    <li>Twin Queen Room <button onclick="addToCart('queen')">Add to Cart</button></li>
+  </ul>
+  </div>
+  <h2>Cart</h2>
+  
+    <h1>Find and Book Your Next Stay</h1>
+	
+	
+    <form id="form">
+      <div id="cart">
+		
+		</div>
+
+      <label for="check-in">Check-in Date: </label>
+      <input type="date" id="check-in" name="check-in" required>
+
+      <label for="check-out">Check-out Date: </label>
+      <input type="date" id="check-out" name="check-out" required>
+
+      <label for="guests">Number of Guests: </label>
+      <input type="number" id="guests" name="guests" min="1" required>
+
+      <button type="submit">Enter</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Hostel Booking Website. All rights reserved.</p>
+  </footer>
+</body>
+</html>
